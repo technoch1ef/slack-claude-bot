@@ -7,7 +7,7 @@ Tiny Rust bot: `@mention` it in Slack, it answers in the thread via the Anthropi
 1. Create an app at <https://api.slack.com/apps> (from scratch).
 2. **OAuth & Permissions** → bot scopes: `app_mentions:read`, `chat:write`. Install to workspace, copy the *Bot User OAuth Token*.
 3. **Basic Information** → copy the *Signing Secret*.
-4. **Event Subscriptions** → enable, request URL `https://<your-app>.herokuapp.com/slack/events`, subscribe to bot event `app_mention`. (Deploy first so the URL check passes.)
+4. **Event Subscriptions** → enable, request URL `https://bakesy-slack-claude-bot-889638b7594d.herokuapp.com/slack/events`, subscribe to bot event `app_mention`. (Deploy first so the URL check passes.)
 5. In Slack: `/invite @YourBot` into a channel, then `@YourBot what is ...`.
 
 ## Env vars
